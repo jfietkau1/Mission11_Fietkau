@@ -7,9 +7,10 @@
 
     <h1>My Bookstore</h1>
 
-<div class="d-flex justify-content-center">
+<div>
     @foreach(Book b in Model.Books)
     {
+        <div class="card m-1 p-1">
         <ul>
             <li>Title: @b.Title</li>
             <li>Author: @b.Author</li>
@@ -19,6 +20,7 @@
             <li>Pages: @b.PageCount</li>
             <li>Price: $@b.Price</li>
         </ul>
+        </div>
     }
 
 
