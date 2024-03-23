@@ -7,13 +7,17 @@
 
     <h1>My Bookstore</h1>
 
-<div>
+<div class="d-flex justify-content-center">
     @foreach(Book b in Model.Books)
     {
         <ul>
-            <li>@b.BookId</li>
-            <li>@b.Title</li>
-            <li>@b.Author</li>
+            <li>Title: @b.Title</li>
+            <li>Author: @b.Author</li>
+            <li>Publisher: @b.Publisher</li>
+            <li>ISBN: @b.ISBN</li>
+            <li>Genre: @b.Classification</li>
+            <li>Pages: @b.PageCount</li>
+            <li>Price: $@b.Price</li>
         </ul>
     }
 
